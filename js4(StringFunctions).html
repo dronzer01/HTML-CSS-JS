@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Functions</title>
+</head>
+<body>
+    <div class="container"></div>
+    <script>
+        var str="This is a string";
+        console.log(str);
+        //First Occurance
+        var pos=str.indexOf('is');
+        console.log(pos);
+        //Last Occurance
+        var pos=str.lastIndexOf('is');
+        console.log(pos);
+        //Substring of a string using slice
+        var substr=str.slice(1,5);//5 is exclusive ,1 is inclusive
+        console.log(substr);
+        //Substring of a string using sunstring
+        var substr=str.substring(1,5);//5 is exclusive ,1 is inclusive
+        console.log(substr);
+        //difference id slice can take ngative values but substring can't.
+        //Substring of a string using substr
+        var substr=str.substr(1,5);//5 & 1 both are inclusive
+        console.log(substr);
+        var replace=str.replace('string','Meenakshi');
+        console.log(str);
+        console.log(replace);
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+        var newstring=str.concat('New String');
+        console.log(newstring);
+        //trim=to remove whitespaces from starting and end only not from between.
+        var strwithshitespaces="   this is     whitespaces          ";
+        console.log(strwithshitespaces);
+        console.log(strwithshitespaces.trim());
+
+        //charAt(index position)-give character present at given at index position
+        var char3=str.charAt(2);
+        console.log(char3);
+
+        //charAt(index position)-give character code present at given at index position
+        var char4=str.charCodeAt(2);
+        console.log(char4);
+
+        console.log(str[2]);
+    </script>
+    
+</body>
+</html>
