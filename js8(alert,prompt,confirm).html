@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert,Prompt and confirm in js</title>
+</head>
+<body>
+    <div class="container">This is a page</div>
+    <script>
+        //Alert in js,it doesnt return anything
+        alert('This is a msg');
+        //prompt in js
+        let name=prompt("What is ur name? ","Guest");
+        // let name=prompt("What is ur name? ");
+        console.log(name);
+        //confirm in js
+        let deletepost=confirm("Do you  really want to delete this post?");
+        console.log(deletepost);
+        if(deletepost){
+            console.log("Your post has been deleted.")
+        }
+        else{
+            {
+            console.log("Your post has not been deleted.")
+        }
+
+        }
+    </script>
+</body>
+</html>

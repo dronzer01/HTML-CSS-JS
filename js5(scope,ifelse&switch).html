@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope,If-else & Switch in JS</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+            <li>item-7</li>
+        </ul>
+    </div>
+    <script>
+        var str1="this is string1";
+        console.log(str1);
+        let a="u";
+        console.log(a);
+        {
+            let a="i";
+        console.log(a);
+        }
+        //can't have same variable name for 2 globals or 2 locals of same scope.
+        // let a="u";
+        // console.log(a);
+        //constant an't be changed
+        const b="This can't be changed"
+         console.log(b);
+        // b="hvnm"
+        // console.log(b);
+        let age=34;
+        if(age>18){
+            console.log('You can drink water');
+        }
+        else{
+            console.log('You can Cold Drink ');
+        }
+        let age2=4;
+        if(age2>18){
+            console.log('You can drink water');
+        }
+        else{
+            console.log('You can Cold Drink ');
+        }
+       const cups=45;
+       switch(cups){
+        case 4:aconsole.log("The value is 4.");
+               break;
+        case 41:aconsole.log("The value is 41.");
+               break;
+        case 42:aconsole.log("The value is 41.");
+               break;
+        default:console.log("The value is 45.");
+               break;
+
+
+       }
+
+    </script>
+</body>
+</html>

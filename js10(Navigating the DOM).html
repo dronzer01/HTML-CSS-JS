@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigating/Manipulating the DOM</title>
+</head>
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Services</li>
+            <li>More About Us</li>
+        </ul>
+    </div>
+    <div class="container">Another Container</div>
+    <script>
+        let main=document.getElementById('main');
+        console.log(main);
+        let nav=document.getElementById('nav');
+        console.log('nav');
+        let con=document.getElementsByClassName('container');
+        console.log(con);
+        //query selector returns first element with same condition provided.
+        let sel=document.querySelector(".container");
+        console.log("Seclector Returns", sel)
+        //queryselectorAll returns all elements with same condition provided.
+        let sel1=document.querySelectorAll(".container");
+        console.log("Seclector Returns", sel1)
+    </script>
+</body>
+</html>

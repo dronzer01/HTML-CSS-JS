@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in js</title>
+</head>
+<body>
+    <div class="container">"This is about loops"</div>
+    <script>
+        console.log("This is about loops");
+        let i=1;
+        let j=1;
+        let store="";
+        // Different type of for loops
+        for(i=1;i<=5;i++){
+            for(j=1;j<=i;j++){
+                store=store+j;
+            }
+            console.log(store);
+            store="";
+        }
+        let friends=["Kai","Tyson","Ray","Max"];
+        friends.forEach(function f(element){
+            console.log("Hello "+element);
+        })
+        for(element of friends){
+            console.log("Hello "+element +" welcome ");
+        }
+        let employee={
+            name:"Harry",
+            salary:10,
+            channel1:"CodeWithMeenakshi",
+            channel2:"Programming with Meenakshi"
+        }
+        // for(key in employee){
+        // console.log(' The ${key} of employee is ${employee[key]}');}
+    
+        // while loop
+        let i1=5;
+        while(i1!=0){
+            console.log(i1);
+            i1--;
+        }
+        // do while loop
+        do{
+            console.log(i1);
+            i1++;
+        }while(i1<=5);
+    </script>
+</body>
+</html>
